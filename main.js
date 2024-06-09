@@ -1,6 +1,24 @@
 const btnAddPhotos = document.getElementById('add-photos');
 const divPhotosGrid = document.getElementById('photos-grid');
 
+//expiremental
+const btnAddPages = document.getElementById('add-pages');
+const theGrid = document.getElementById('the-grid');
+const thePage = document.getElementById('page');
+
+btnAddPages.addEventListener('click', () => {
+    console.log('page added');
+    const heading = document.createElement('h1');
+    heading.innerText = "hello"
+    theGrid.appendChild(heading);
+})
+
+
+
+
+//end of expirement
+
+
 btnAddPhotos.addEventListener('click', () => {
     //Initiate a new 'input' open file dialog and set it's properties
     const openFileDialog = document.createElement('input');
